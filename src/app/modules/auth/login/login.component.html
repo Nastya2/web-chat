@@ -1,0 +1,19 @@
+<form [formGroup]="login_form">
+    <tui-input formControlName="login" class="m-b-20"> 
+        Введите логин
+        <input tuiTextfield />
+    </tui-input>
+    <tui-error [error]="loginError"></tui-error>
+    <tui-input-password formControlName="password" class="m-b-20">
+        Введите пароль  
+    </tui-input-password>
+    <!-- <tui-error [error]="passwordError"></tui-error> -->
+    <button class="m-b-20" tuiButton type="button" iconRight="tuiIconLogIn" (click)="onLogin()">
+        Войти
+    </button>
+    <a href="#" class="form-href">Нет аккаунта?</a>
+</form>
+
+
+
+
