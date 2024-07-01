@@ -12,13 +12,25 @@ form {
     width: 30%;
     min-width: 300px;
     border-radius: 12px;
-    padding: 50px 30px 30px;
+    padding: 20px 30px 30px;
     box-shadow: 0 0 6px rgba(0,0,0,.14);
+}
+
+.form-title {
+    font: var(--tui-font-text-m);
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 30px;
 }
 
 .m-b-20 {
     margin-bottom: 20px;
 }
+
+.m-t-20 {
+    margin-top:20px;
+}
+
 
 .form-href {
     color: var(--tui-primary);

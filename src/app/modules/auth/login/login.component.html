@@ -1,14 +1,15 @@
 <form [formGroup]="login_form">
-    <tui-input formControlName="login" class="m-b-20"> 
+    <h1 class="form-title">Вход в веб-чат</h1>
+    <tui-input formControlName="login"> 
         Введите логин
         <input tuiTextfield />
     </tui-input>
-    <tui-error [error]="loginError"></tui-error>
-    <tui-input-password formControlName="password" class="m-b-20">
+    <tui-error *ngIf="showHint" [error]="loginError"></tui-error>
+    <tui-input-password formControlName="password" class="m-t-20" >
         Введите пароль  
     </tui-input-password>
-    <!-- <tui-error [error]="passwordError"></tui-error> -->
-    <button class="m-b-20" tuiButton type="button" iconRight="tuiIconLogIn" (click)="onLogin()">
+    <tui-error  *ngIf="showHint" [error]="passwordError"></tui-error>
+    <button class="m-b-20 m-t-20" tuiButton type="button" iconRight="tuiIconLogIn" (click)="onLogin()">
         Войти
     </button>
     <a href="#" class="form-href">Нет аккаунта?</a>
